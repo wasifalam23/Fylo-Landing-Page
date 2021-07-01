@@ -1,0 +1,55 @@
+// COLOR VARIABLES
+$color-primary-blue-1: hsl(243, 87%, 12%);
+$color-primary-blue-2: hsl(239, 22%, 44%);
+
+$color-accent-blue: hsl(224, 93%, 58%);
+$color-accent-cyan: hsl(170, 45%, 43%);
+
+$color-neutral-gray-1: hsl(240, 75%, 98%);
+$color-neutral-gray-2: hsl(0, 0%, 75%);
+
+// FONT VARIABLES
+$font-primary: "Open Sans", sans-serif;
+$font-secondary: "Raleway", sans-serif;
+
+// BREAKPOINTS
+$bp-largest: 76.875em; // 1230px
+
+$bp-medium: 62.5em; // 1000px
+$bp-small: 57.5em; // 920px
+$bp-smaller: 50em; // 800px
+$bp-smallest: 37.5em; //600px
+$bp-tiny: 31.25em; //500px
+$bp-tiniest: 25em; //400px
+
+// GLOBAL RESET
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; //1rem = 10px
+  box-sizing: border-box;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 50%; //1rem = 8px
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 43.75%; //7px
+  }
+
+  @media only screen and (max-width: $bp-tiny) {
+    font-size: 37.5%; //6px
+  }
+}
+
+body {
+  font-family: $font-primary;
+  font-weight: 400;
+  min-height: 100vh;
+}

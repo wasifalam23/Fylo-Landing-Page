@@ -1,0 +1,90 @@
+.container {
+  max-width: 144rem;
+  margin: 8rem auto;
+
+  @media only screen and (max-width: $bp-largest) {
+    margin-top: 6rem;
+    margin-bottom: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  @media only screen and (max-width: $bp-smaller) {
+    margin-top: 4rem;
+  }
+}
+
+.header {
+  padding: 0 6rem;
+  margin-bottom: 15rem;
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 0 4rem;
+  }
+}
+
+.header__details {
+  display: flex;
+  align-items: center;
+
+  @media only screen and(max-width: $bp-smaller) {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+}
+
+.features {
+  background-image: url("/images/bg-curve-mobile.svg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding: 17rem 6rem 12rem 6rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+
+  @media only screen and (max-width: $bp-small) {
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+
+  @media only screen and (max-width: $bp-smaller) {
+    flex-direction: column-reverse;
+    padding-top: 10rem;
+  }
+}
+
+.access {
+  display: flex;
+  padding: 9rem 6rem;
+  background-color: $color-primary-blue-2;
+
+  @media only screen and (max-width: $bp-small) {
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+
+  @media only screen and(max-width: $bp-smaller) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footer {
+  color: #fff;
+  background-color: $color-primary-blue-1;
+  padding: 8rem 22rem 8rem 6rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding-right: 6rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 6rem 4rem 6rem 4rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    padding-bottom: 4rem;
+  }
+}

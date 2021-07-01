@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Fylo landing page with two column layout</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <nav class="navbar">
+          <img
+            src="/images/logo-header.svg"
+            alt="fylo-logo"
+            class="navbar__logo"
+          />
+
+          <ul class="navbar__items">
+            <li class="navbar__item">
+              <a class="navbar__link" href="#">Features</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#">Team</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#">Sign In</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__details">
+          <div class="intro">
+            <h1 class="heading-1 mb-md">
+              All your files in one secure location, accessible anywhere.
+            </h1>
+            <p class="paragraph-1 intro__text">
+              Fylo stores your most important files in one secure location.
+              Access them wherever you need, share and collaborate with friends,
+              family, and co-workers.
+            </p>
+
+            <div class="intro__input--box">
+              <input
+                type="text"
+                class="intro__input"
+                placeholder="Enter your Email..."
+              />
+              <button class="intro__btn">Get Started</button>
+            </div>
+          </div>
+
+          <img
+            src="/images/illustration-1.svg"
+            alt="illustration-1"
+            class="intro__svg"
+          />
+        </div>
+      </div>
+
+      <div class="features">
+        <div class="feature__details">
+          <h1 class="heading-1 feature__heading">
+            Stay productive, wherever you are
+          </h1>
+          <div class="feature__texts">
+            <p class="paragraph-2">
+              Never let location be an issue when accessing your files. Fylo has
+              you covered for all of your file storage needs.
+            </p>
+            <p class="paragraph-2">
+              Securely share files and folders with friends, family and
+              colleagues for live collaboration. No email attachments required!
+            </p>
+          </div>
+          <button class="btn-inline">
+            See how Fylo works
+            <img src="/images/icon-arrow.svg" alt="icon-arrow" />
+          </button>
+
+          <div class="ceo">
+            <p class="ceo__text">
+              Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine.
+            </p>
+            <div class="ceo__details">
+              <img
+                src="/images/avatar-testimonial.jpg"
+                alt="ceo-image"
+                class="ceo__img"
+              />
+              <div class="ceo__info">
+                <p class="ceo__name">Kyle Burton</p>
+                <p class="ceo__identity">Founder & CEO, Huddle</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="/images/illustration-2.svg"
+          alt="illustration-1"
+          class="feature__svg"
+        />
+      </div>
+
+      <div class="access">
+        <div class="access__details">
+          <h2 class="heading-2">Get early access today</h2>
+          <p class="access__text">
+            It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any questions, our support team
+            would be happy to help you.
+          </p>
+        </div>
+
+        <div class="access__input--box">
+          <input
+            type="text"
+            class="access__input"
+            placeholder="email@example.com"
+          />
+          <button class="access__btn">Get Started For Free</button>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <img
+          src="/images/logo-footer.svg"
+          alt="footer-logo"
+          class="company__logo"
+        />
+
+        <div class="company__details">
+          <div class="company__contact">
+            <div class="company__phone">
+              <img
+                src="/images/icon-phone.svg"
+                alt="phone-icon"
+                class="company__phone--icon"
+              />
+              <p class="company__phone--no">Phone: +1-543-123-4567</p>
+            </div>
+
+            <div class="company__email">
+              <img
+                src="/images/icon-email.svg"
+                alt="email-icon"
+                class="company__email--icon"
+              />
+              <p class="company__email--id">example@fylo.com</p>
+            </div>
+          </div>
+
+          <ul class="company__list--items">
+            <li class="company__list--item">About Us</li>
+            <li class="company__list--item">Jobs</li>
+            <li class="company__list--item">Press</li>
+            <li class="company__list--item">Blog</li>
+          </ul>
+
+          <ul class="company__list--items">
+            <li class="company__list--item">Contact Us</li>
+            <li class="company__list--item">Terms</li>
+            <li class="company__list--item">Privacy</li>
+          </ul>
+
+          <div class="company__social--icons">
+            <img
+              src="/images/facebook.png"
+              alt="facebook-icon"
+              class="company__social--icon"
+            />
+            <img
+              src="/images/twitter.png"
+              alt="facebook-icon"
+              class="company__social--icon"
+            />
+            <img
+              src="/images/instagram.png"
+              alt="facebook-icon"
+              class="company__social--icon"
+            />
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

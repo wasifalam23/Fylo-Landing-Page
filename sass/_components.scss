@@ -1,0 +1,456 @@
+/////////////////////////////////////////
+// NAVBAR
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10rem;
+
+  @media only screen and (max-width: $bp-tiniest) {
+    flex-direction: column;
+  }
+
+  &__logo {
+    @media only screen and (max-width: $bp-tiniest) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__items {
+    display: flex;
+    list-style: none;
+  }
+
+  &__item {
+    &:not(:first-child) {
+      margin-left: 5rem;
+
+      @media only screen and (max-width: $bp-tiniest) {
+        margin-left: 9rem;
+      }
+    }
+  }
+
+  &__link {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: $color-primary-blue-1;
+
+    @media only screen and (max-width: $bp-tiny) {
+      font-size: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-tiniest) {
+      font-size: 2.3rem;
+    }
+  }
+}
+
+/////////////////////////////////////////
+// INTRO
+
+.intro {
+  @media only screen and(max-width: $bp-smaller) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 6rem;
+  }
+
+  @media only screen and (max-width: $bp-tiny) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  &__input--box {
+    @media only screen and (max-width: $bp-smaller) {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__input {
+    width: 50%;
+    padding: 1rem 2rem;
+    margin-right: 1rem;
+
+    &::-webkit-input-placeholder {
+      color: $color-neutral-gray-2;
+    }
+
+    @media only screen and (max-width: $bp-smaller) {
+      width: 55%;
+      padding: 1.3rem 2rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      margin-bottom: 1rem;
+      width: 80%;
+      margin-right: 0;
+    }
+  }
+
+  &__btn {
+    padding: 1.2rem 4rem;
+    background-color: $color-accent-blue;
+    border: none;
+    color: #fff;
+    font-weight: 400;
+    border-radius: 0.3rem;
+    cursor: pointer;
+
+    @media only screen and (max-width: $bp-smallest) {
+      padding: 1.7rem 6rem;
+      width: 80%;
+    }
+  }
+
+  &__svg {
+    width: 50%;
+    margin-left: auto;
+
+    @media only screen and(max-width: $bp-smaller) {
+      width: 70%;
+      margin: 0;
+      margin-bottom: 8rem;
+    }
+  }
+}
+
+/////////////////////////////////////////
+// FEATURES
+.feature {
+  &__details {
+    @media only screen and (max-width: $bp-smaller) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__texts {
+    width: 75%;
+
+    @media only screen and (max-width: $bp-tiny) {
+      width: 80%;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 3rem;
+  }
+
+  &__svg {
+    // flex: 1;
+    width: 40%;
+    margin-left: auto;
+
+    @media only screen and (max-width: $bp-smaller) {
+      margin: 0;
+      width: 55%;
+      margin-bottom: 8rem;
+    }
+  }
+}
+
+/////////////////////////////////////////
+// CEO
+.ceo {
+  width: 43%;
+  padding: 3rem 2.5rem 2.3rem 3rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  position: relative;
+
+  @media only screen and (max-width: $bp-largest) {
+    padding-top: 3.5rem;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    width: 50%;
+  }
+  @media only screen and(max-width: $bp-smaller) {
+    padding-top: 4rem;
+    padding-bottom: 3.5rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    width: 60%;
+  }
+
+  @media only screen and (max-width: $bp-tiny) {
+    width: 70%;
+  }
+
+  &__text {
+    line-height: 1.7;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    color: $color-primary-blue-1;
+    font-weight: 400;
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 1.2rem;
+    }
+
+    @media only screen and(max-width: $bp-smaller) {
+      font-size: 1.4rem;
+      margin-bottom: 1.7rem;
+    }
+
+    @media only screen and (max-width: $bp-tiny) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__details {
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin-right: 1.2rem;
+
+    @media only screen and(max-width: $bp-smaller) {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+
+  &__name {
+    font-size: 1.1rem;
+    font-family: $font-secondary;
+    font-weight: 700;
+    color: $color-primary-blue-1;
+
+    @media only screen and(max-width: $bp-smaller) {
+      font-size: 1.3rem;
+      margin-bottom: 0.3rem;
+    }
+  }
+
+  &__identity {
+    font-size: 1rem;
+    font-family: $font-secondary;
+  }
+
+  &::before {
+    content: "";
+    background: url("/images/icon-quotes.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    top: 1.2rem;
+  }
+}
+
+/////////////////////////////////////////
+// ACCESS
+.access {
+  &__details {
+    flex: 0 0 38%;
+
+    @media only screen and(max-width: $bp-small) {
+      flex: 0 0 50%;
+    }
+
+    @media only screen and(max-width: $bp-smaller) {
+      padding: 0 10rem;
+    }
+  }
+
+  &__text {
+    color: #fff;
+    font-size: 1.6rem;
+
+    @media only screen and(max-width: $bp-smaller) {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-tiny) {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__input--box {
+    margin-left: 20rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @media only screen and(max-width: $bp-small) {
+      margin-left: 6rem;
+    }
+
+    @media only screen and(max-width: $bp-smaller) {
+      margin: 0;
+      flex: 0;
+
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+
+  &__input {
+    padding: 1.3rem 2rem;
+    width: 90%;
+    border-radius: 0.3rem;
+    border: none;
+    margin-bottom: 1rem;
+    &::-webkit-input-placeholder {
+      color: $color-neutral-gray-2;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    @media only screen and(max-width: $bp-small) {
+      width: 95%;
+    }
+
+    @media only screen and(max-width: $bp-smaller) {
+      width: 40rem;
+      margin-bottom: 0;
+      margin-right: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      margin-bottom: 1rem;
+      width: 60%;
+      margin-right: 0;
+    }
+  }
+
+  &__btn {
+    padding: 1.2rem 2rem;
+    background-color: $color-accent-blue;
+    border: none;
+    color: #fff;
+    font-weight: 400;
+    border-radius: 0.3rem;
+    cursor: pointer;
+
+    @media only screen and (max-width: $bp-smallest) {
+      width: 60%;
+    }
+  }
+}
+
+/////////////////////////////////////////
+// FOOTER
+.company {
+  &__details {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @media only screen and (max-width: $bp-tiny) {
+      flex-direction: column;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 1.6rem;
+
+    @media only screen and (max-width: $bp-tiny) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__contact {
+    @media only screen and (max-width: $bp-tiny) {
+      margin-bottom: 6rem;
+    }
+  }
+
+  &__phone {
+    margin-bottom: 1.5rem;
+  }
+
+  &__phone,
+  &__email {
+    display: flex;
+    align-items: center;
+  }
+
+  &__phone--icon,
+  &__email--icon {
+    margin-right: 1rem;
+  }
+
+  &__phone--no,
+  &__email--id {
+    font-size: 1.4rem;
+    display: block;
+
+    @media only screen and (max-width: $bp-tiny) {
+      font-size: 2.2rem;
+    }
+  }
+
+  &__list--items {
+    list-style: none;
+
+    &:not(:last-child) {
+      margin-bottom: 1.3rem;
+
+      @media only screen and (max-width: $bp-tiny) {
+        margin-bottom: 6rem;
+      }
+    }
+  }
+
+  &__list--item {
+    font-size: 1.4rem;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-bottom: 1.3rem;
+    }
+
+    @media only screen and (max-width: $bp-tiny) {
+      font-size: 2.2rem;
+    }
+  }
+
+  &__social--icons {
+    align-self: center;
+  }
+
+  &__social--icon {
+    width: 3rem;
+    height: 3rem;
+    filter: invert(100%);
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+
+    @media only screen and (max-width: $bp-tiny) {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+}
